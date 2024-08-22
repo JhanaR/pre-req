@@ -1,15 +1,23 @@
-let item = {
-    name:'laptop',
-    price:33000,
-    quantity:1,
-    categories:['electronics','laptop'],
-    dimensions:{
-      length:7,
-      breadth:3.5,
-      height:.12
-    }
-  }
 
-  console.log(item);
-  console.log(item.quantity);
-  console.log(item.dimensions.breadth);
+
+
+//using API call
+const fetchData = async () => {
+  try{
+    const response= await fetch('https://jsonplaceholder.typicode.com/todos/')
+    if(!response.ok) throw new Error(response.status);
+    const result = await response.json();
+    return result;
+  }catch(e){
+    console.log(e)
+
+  }
+}
+
+fetchData().then((result)=>{
+  console.log(result)
+}).catch((err)=>{
+  console.log(err)
+}).finally(()=>{
+  console.log('promise success')
+})
