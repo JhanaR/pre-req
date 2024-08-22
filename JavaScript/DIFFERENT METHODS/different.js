@@ -45,7 +45,7 @@ let find= array.find((value)=>{
     return value > 60;
 });
 console.log('FIND',find);
-//output 66 it will show the first result only.
+//output 66, it will show the first result only.
 
 
 
