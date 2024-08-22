@@ -1,7 +1,7 @@
-let doubleArray =["apple","ball","cat","dog",[1,2]];
+let Array =["apple","ball","cat","dog",[1,2]];
 
-console.log(doubleArray);
+//console.log(Array);
 
-//console.log(doubleArray.length);
+//console.log(Array.length);
 
-// console.log(doubleArray[4][0]);
+console.log(Array[4][0]);
