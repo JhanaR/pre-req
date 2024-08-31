@@ -27,7 +27,25 @@ sum();*/
 
 // sum(5,10);
 
+/*
+FUNCTION EXPRESSION
 
+let sum = function(a, b) {
+  return a + b;
+};
+
+sum();// function call;
+
+//FUNCTION DECLARATION
+sum(5,5);// follows hoisting so it will show the result
+console.log('sum',sum(5,5))
+
+function sum (a, b) {
+  return a + b;
+};
+
+sum(5,5);// function call follows hoisting method;
+console.log('sum',sum(5,5))*/
 
 let array =[1,2,3,4,5];
 

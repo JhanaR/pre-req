@@ -5,16 +5,16 @@ const transport =['car','bus','van','jeep','bike','scooter']
 
 const splice =transport.splice(2,2);//Removal --- splice(from which index, how many delete)
 
-console.log(splice);
+console.log('splice',splice);
 //output ['van','jeep']
 
 //Requirement:1 Need to form new array by removing 2 values from current array
 //using SLICE
 const vehicles =['car','bus','van','jeep','bike','scooter']
 
-const slice =vehicles.slice(0,2);//Removal --- splice(from which index, how many elements)
+const slice =vehicles.slice(2,3);//Removal --- splice(from which index, how many elements)
 
-console.log(slice);
+console.log('slice',slice);
 //output ['car','bus']
 
 //using CONCATE
