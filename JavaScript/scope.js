@@ -2,8 +2,8 @@ let name = "krishna"; //global scope
 
 function greet(firstName){
     let lastName = "Kumar";
-    // console.log(name);           
-    return `Hello ${firstName}`;  //local scope
+    // console.log(firstName);           
+    return `Hello ${firstName}`;  //local/functional scope
 }
 
 //console.log('Hello ',firstName)
