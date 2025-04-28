@@ -1,7 +1,7 @@
 //if code tooks long time then the below code needs to wait for the current execution.
 //asnyc execution
 
-const promise = new Promise((resolve, reject) => {
+const data = new Promise((resolve, reject) => {
   setTimeout(() => {
     const input = "ABC";
     if (input) {
@@ -12,7 +12,7 @@ const promise = new Promise((resolve, reject) => {
   }, 5000);
 });
 
-promise
+data
   .then((input) => {
     console.log(input);
   })
