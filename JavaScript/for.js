@@ -12,23 +12,20 @@ let obj = {
   age: 3,
   hobbies: "playing"
 }
-
-
 // // //FOR IN
-for(let prop in obj)
+for(let IN in obj)
 {
   //console.log(obj.name);
-  // console.log(prop + ":" ,  prop);//value of properties
-  console.log(prop, obj[prop]);//value of properties
+  // console.log(prop + ":" ,  prop);//properties
+  console.log(IN, obj[IN]);//value of properties
 
 }
-
 //FOR OFF
-for(let prop of Object.keys(obj))
+for(let OFF of Object.keys(obj))
 {
   //console.log(obj.name);
   // console.log('prop', prop);//properties
-  console.log(prop, obj[prop]);//value of properties
+  console.log(OFF, obj[OFF]);//value of properties
 }
 
 
@@ -54,6 +51,26 @@ for(let prop of Object.keys(obj))
 //   }
 
 
+let object = {
+  name : "kumar",
+  id : 123,
+  age : 32,
+  isAdmin: true 
+}
 
+for(let backtick in object){
 
+  console.log(`${backtick} ------ ${object[backtick]}`);
+  
+}
 
+let fruits = ["Apple","Banana","Plum"];
+// for(let i = 0 ; i < fruits.length;i++){
+
+// }
+
+for(let fruit of fruits){
+  console.log(fruit);
+}
+
+//for EACH
