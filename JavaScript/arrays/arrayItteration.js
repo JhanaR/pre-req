@@ -57,7 +57,7 @@ function myFunction(num) {
   //output [10, 110, 220, 440]
 
   //object Array
-const transport =[
+const transport1 =[
     {id:1,title:"car"},
     {id:2,title:"bus"},
     {id:3,title:"van"},
@@ -68,14 +68,14 @@ const transport =[
 
   //requirement 1. need to return the value which is in title.
 
-  const newTitle = transport.map((tit)=>{
+  const newTitle = transport1.map((tit)=>{
     return tit.title;
   })
   console.log('Array map title',newTitle)
   //output:['car', 'bus', 'van', 'jeep', 'bike', 'scooter']
 
   //requirement 2. need to return the value which is in title with upper case.
-  const newUpperTitle = transport.map((tit)=>{
+  const newUpperTitle = transport1.map((tit)=>{
     return tit.title.toUpperCase();
   })
   console.log('Array map title in upper case',newUpperTitle)
