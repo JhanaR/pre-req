@@ -3,16 +3,16 @@
 
 const number = [1,2,3,4];
 
-// let newNumber = number.map(function(element,index){
-// return element*2
-// }
-// )
-// console.log(newNumber);
-
+let newNumber = number.map(function(element,index){
+return element*2
+}
+)
+console.log(newNumber);
 
 //converting newNumber to arrow function
 
-let doubleNumber = number.map(dum=>dum*2) // in order to see multiple outputs flower bracket is must and return key word is must.
+let doubleNumber = number.map(dum=>dum*2) // in order to see multiple outputs flower bracket is must 
+// and return key word is must.
 console.log(doubleNumber);
 
 let userObj = [{userName:"Aila",age:31,salary:31000},
