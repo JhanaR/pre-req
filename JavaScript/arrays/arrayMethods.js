@@ -277,3 +277,27 @@ console.log(numbers);
 // Math.max()
 // Home made Min()
 // Home made Max()
+
+//Double the Array
+let num = [1, 2, 3];
+let dblNum = num.map(num =>  n* 2)
+console.log('Double the Array', dblNum);
+//Output: [2, 4, 6]
+
+//Filter out odd numbers
+let whole = [10, 21, 32, 41]
+let odd = whole.filter(num =>num%2 !== 0)
+console.log('Filter out odd numbers', odd);
+//Output: [21, 41]
+
+//find first number greater than 50
+let numr = [10, 35, 60, 25]
+let firstGreater = numr.find(num => num>50 )
+console.log('find first number greater than 50', firstGreater);
+//Output: 60
+
+//sum of all numbers
+let sum = [1, 2, 3, 4]
+let tot = sum.reduce((acc, curr )=>acc +curr, 0)
+console.log('sum of all numbers', tot);
+//Output: 10

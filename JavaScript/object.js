@@ -9,10 +9,14 @@ let item = {
       height:.12
     }
   }
-
+item.check ="verified"
+delete item.price;
+item.check ="UnVerified"
+//access the object properties using .(dot) notation
 console.log(item);
-console.log(item.quantity);
-console.log(item.dimensions.breadth);
+// console.log(item.quantity);
+// console.log(item.dimensions.breadth);
+// console.log(item.check);
 
 // let user = {
 //    "name" : "rakesh",
@@ -53,7 +57,7 @@ let user = {
     const : 10,
     return : 20
 }
-console.log(user.const);
+console.log(user);
 
 let users = [];
 
