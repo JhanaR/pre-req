@@ -1,31 +1,37 @@
-//Requirement:1 Need to form new array by removing last 2 values from current 
 //using SPLICE
 
 const transpor =['car','bus','van','jeep','bike','scooter']
 
-const splice =transpor.splice(2,2);//Removal --- splice(from which index, how many delete)
+const splice =transpor.splice(2,3);//.splice(start, deleteCount)
 
 console.log('splice',splice);
 //output ['van','jeep']
 
-//Requirement:1 Need to form new array by removing 2 values from current array
 //using SLICE
 const vehicles =['car','bus','van','jeep','bike','scooter']
 
-const slice =vehicles.slice(2,3);//Removal --- splice(from which index, how many elements)
+const slice =vehicles.slice(2,3)  ;//.slice(start, end)
 
 console.log('slice',slice);
-//output ['car','bus']
+//output ['van']
 
+const transport2 =['car','bus','van','jeep','bike','scooter']
 //using CONCATE
 
 const number = [1,2,3,4]
-
+const join = transport2.concat(vehicles,number);
+console.log('JOIN', join);
+//['car', 'bus', 'van', 'jeep', 'bike', 'scooter', 'car', 'bus', 'van', 'jeep', 'bike', 'scooter', 1, 2, 3, 4] 
 
 //joining an array
-const join = transpor.concat(vehicles,number);// in concat(we can define n number of arrays separated with comma
+const concat = transport2.concat(vehicles,number);// in concat(we can define n number of arrays separated with comma
+console.log('concat', concat);
+//['car', 'bus', 'van', 'jeep', 'bike', 'scooter', 'car', 'bus', 'van', 'jeep', 'bike', 'scooter', 1, 2, 3, 4]
 
-console.log('JOIN', join);
+const alphe = ['abc','def','ghi','jkl'];
+const separate = alphe.join(',');
+console.log('SEPARATE', separate);
+//output: abc,def,ghi,jkl
 
 //FIND INDEX
 const vehi =[
@@ -56,15 +62,10 @@ const vehic =[
   ]
 
   const find = vehi.find((val)=>{
-    //return val.id == 2;
-    return val.title == "van";
+    return val.id == 2;
   })
 
   console.log('find',find)
-
-    //OUTPUT: object will return
-
-    //FILTER need to extract few data from the current array
 
 const ages = [1, 33, 76, 40, 66];
 let filter = ages.filter((value)=>{
@@ -102,11 +103,10 @@ console.log('Array Filter index',newfilter)
 
 //Map 
 
-let array =[22,52,11,6,49,59,1];//using this array i need to form another array.
+let array =[22,52,11,6,49,59,1];//using this array need to form another array.
 
-
-let map = array.map((value)=>{
-    return value >42
+let map = array.map((greater)=>{
+    return greater >42
 })
 console.log('Map value',map)
 //output: [false, true, false, false, true, true, false]
@@ -122,6 +122,7 @@ function myFunction(num) {
   console.log('Array map fun',newArr)
   //output [10, 110, 220, 440]
 
+const no = [1, 2, 3, 4];
   //object Array
 const transport1 =[
     {id:1,title:"car"},
@@ -160,10 +161,6 @@ let includes =fruits.includes("Apple");
 console.log('includes',includes);
 //true
 
-// Array find()
-// Array findIndex()
-// Array findLast()
-// Array findLastIndex()
 let items = [250,500];
 // ADD REMOVE
 items.push(100);
@@ -196,7 +193,7 @@ let firstArray = [10,20,30,40,50,10,20,30,10,50,90];
 
 console.log(firstArray.slice(3,6)); // 
 let firstSubArray = firstArray.slice(3,6);
-console.log(firstArray);
+console.log('slice',firstArray);
 
 // indexOf
 console.log("index of -------",firstArray.indexOf(10)); // 0
@@ -210,7 +207,7 @@ function doSomething(){
    var printArray = [10,20,30,40,50,10,20,30,10,50,90];
 //    printArray.forEach(show);
    printArray.forEach((element) => {
-    console.log(element);
+    console.log('forEach',element);
    })
 }
 //doSomething();
@@ -218,30 +215,13 @@ function doSomething(){
 
 var numbers = [10,20,30,40,50,60];
 
-// add + 2 to all 
-
-// numbers.map(function(num){
-//   num = num+2;
-// });
-// var result = numbers.map((num) => num+2);
-// console.log(result);
-
-// var result1= numbers.reduce((a,b) => a+b);
-// console.log(result1);
-
-// var result2 = numbers.filter(num => num>35);
-// console.log(result2);
-
-//Adding elements 1,2,3 from 0 index 
-//= 1 2 3 10 20 30 40 50 
-
 numbers.splice(0,0,1,2,3);
 
-console.log(numbers);
+console.log('splice',numbers);
 
 // 30 40  
 numbers.splice(5,2);
-console.log(numbers);
+console.log('splice',numbers);
 
         let a = 10;
 		let b = true;
@@ -251,10 +231,10 @@ console.log(numbers);
 		//unpacking 
 		var x , y , z;
 		[x,y,z]= array1;
-        console.log(x);
-        console.log(y);
-        console.log(z);
-        console.log(array1);
+        console.log('X',x);
+        console.log('Y',y);
+        console.log('Z',z);
+        console.log('array',array1);
 
         let Array =["apple","ball","cat","dog",[1,2]];
 
@@ -262,15 +242,113 @@ console.log(numbers);
         
         //console.log(Array.length);
         
-        console.log(Array[4][0]);
-        
+        console.log('4th array zeroth index',Array[4][0]);
+      
 
-        // Array sort()
-// Array reverse()
-// Array toSorted()
-// Array toReversed()
-// Sorting Objects
+//Double the Array
 
+let num = [1, 2, 3];
+let dblNum = num.map(num =>  num * 2)
+console.log('Double the Array', dblNum);
+//Output: [2, 4, 6]
+
+//Filter out odd numbers
+let whole = [10, 21, 32, 41]
+let odd = whole.filter(num =>num%2 !== 0)
+console.log('Filter out odd numbers', odd);
+//Output: [21, 41]
+
+//find first number greater than 50
+let numr = [10, 35, 60, 25]
+let firstGreater = numr.find(num => num>50 )
+console.log('find first number greater than 50', firstGreater);
+//Output: 60
+
+//sum of all numbers
+let sum = [1, 2, 3, 4]
+let tot = sum.reduce((acc, curr )=>acc +curr, 0)
+console.log('sum of all numbers', tot);
+//Output: 10
+
+//return an object showing the count of each fruit
+const fruity = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+
+let count = fruity.reduce((acc, cur) => {
+  acc[cur] = (acc[cur] || 0) + 1;
+  return acc;
+}, {});
+
+console.log('count', count); // { apple: 3, banana: 2, orange: 1 }
+
+
+//Flattened Array
+
+const nested = [1, [2, 3], [4, [5, 6]]];
+const flatArray = nested.flat(2);// flattens up to 2 levels deep
+console.log('Flattened Array', flatArray);
+//Output: [1, 2, 3, 4, 5, 6]
+
+//ascending order
+const ascending = [5, 3, 8, 1, 2];
+const sortedAscending = ascending.sort((a, b) => a - b);
+console.log('ascending order', sortedAscending);
+//Output: [1, 2, 3, 5, 8]
+
+
+//descending order
+const descending = [5, 3, 8, 1, 2].sort((a, b) => b - a);
+console.log('descending order', descending);  
+//Output: [8, 5, 3, 2, 1]
+
+//Get names of users who are older than 30 in uppercase.
+const users = [
+  { id: 1, name: 'Alice', age: 31 },
+  { id: 2, name: 'Bobbilie', age: 34 },
+  { id: 3, name: 'Charlie', age: 25 },
+  { id: 4, name: 'Donglege', age: 28 },
+  { id: 5, name: 'Eveninly', age: 29 }
+];
+
+let Allname = users
+  .filter(Allname => Allname.age > 30)
+  .map(Allname => Allname.name.toUpperCase());
+
+console.log(Allname); // Output: ['ALICE', 'BOBBILIE']
+
+// Find the first user who is younger than 30.
+
+let first_name = users
+  .filter(first_name => first_name.age >30)
+  .find(first_name => first_name.name.toUpperCase());
+
+  console.log(first_name); // Output: { id: 1, name: 'Alice', age: 31 }
+
+// Sort the users by age in descending order.
+
+let sortUsers = users.sort((a,b) => b.age - a.age) 
+console.log(sortUsers);
+// Output:  
+// {id: 2, name: 'Bobbilie', age: 34}
+// {id: 1, name: 'Alice', age: 31}
+// {id: 5, name: 'Eveninly', age: 29}
+// {id: 4, name: 'Donglege', age: 28}
+// {id: 3, name: 'Charlie', age: 25} 
+
+//Check if at least one user is younger than 25
+let out = users
+		.some( use => use.ag>30)
+console.log(out); // Output: true
+
+const orders = [
+  { id: 1, amount: 250 },
+  { id: 2, amount: 400 },
+  { id: 3, amount: 150 }
+];
+let order = orders.some(order => order.amount > 300);
+console.log('order', order); // Output: true
+
+<<<<<<< HEAD
+=======
 // Numeric Sort
 // Random Sort
 // Math.min()
@@ -301,3 +379,4 @@ let sum = [1, 2, 3, 4]
 let tot = sum.reduce((acc, curr )=>acc +curr, 0)
 console.log('sum of all numbers', tot);
 //Output: 10
+>>>>>>> 2c5eb52b80c61f22ba4110d83b70e34693387a89
