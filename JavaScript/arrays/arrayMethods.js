@@ -115,8 +115,8 @@ console.log('Map value',map)
 const numberss = [1, 11, 22, 44];
 const newArr = numberss.map(myFunction);
 
-function myFunction(num) {
-    return num * 10;
+function myFunction(numem) {
+    return numem * 10;
   }
 
   console.log('Array map fun',newArr)
@@ -247,27 +247,27 @@ console.log('splice',numbers);
 
 //Double the Array
 
-let num = [1, 2, 3];
-let dblNum = num.map(num =>  num * 2)
-console.log('Double the Array', dblNum);
+let numm = [1, 2, 3];
+let dblNumm = numm.map(num =>  num * 2)
+console.log('Double the Array', dblNumm);
 //Output: [2, 4, 6]
 
 //Filter out odd numbers
-let whole = [10, 21, 32, 41]
-let odd = whole.filter(num =>num%2 !== 0)
-console.log('Filter out odd numbers', odd);
+let wholee = [10, 21, 32, 41]
+let odde = wholee.filter(num =>num%2 !== 0)
+console.log('Filter out odd numbers', odde);
 //Output: [21, 41]
 
 //find first number greater than 50
-let numr = [10, 35, 60, 25]
-let firstGreater = numr.find(num => num>50 )
-console.log('find first number greater than 50', firstGreater);
+let numrr = [10, 35, 60, 25]
+let firstGreaterr = numrr.find(num => num>50 )
+console.log('find first number greater than 50', firstGreaterr);
 //Output: 60
 
 //sum of all numbers
-let sum = [1, 2, 3, 4]
-let tot = sum.reduce((acc, curr )=>acc +curr, 0)
-console.log('sum of all numbers', tot);
+let sume = [1, 2, 3, 4]
+let tote = sume.reduce((acc, curr )=>acc +curr, 0)
+console.log('sum of all numbers', tote);
 //Output: 10
 
 //return an object showing the count of each fruit
@@ -346,19 +346,9 @@ const orders = [
 ];
 let order = orders.some(order => order.amount > 300);
 console.log('order', order); // Output: true
-
-<<<<<<< HEAD
-=======
-// Numeric Sort
-// Random Sort
-// Math.min()
-// Math.max()
-// Home made Min()
-// Home made Max()
-
 //Double the Array
-let num = [1, 2, 3];
-let dblNum = num.map(num =>  n* 2)
+let numeric = [1, 2, 3];
+let dblNum = numeric.map(num =>  num* 2)
 console.log('Double the Array', dblNum);
 //Output: [2, 4, 6]
 
@@ -379,4 +369,3 @@ let sum = [1, 2, 3, 4]
 let tot = sum.reduce((acc, curr )=>acc +curr, 0)
 console.log('sum of all numbers', tot);
 //Output: 10
->>>>>>> 2c5eb52b80c61f22ba4110d83b70e34693387a89
