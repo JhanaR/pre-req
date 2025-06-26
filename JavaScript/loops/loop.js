@@ -1,20 +1,19 @@
-// for(var i=1;i<=10;i++){
+for(var i=1;i<=10;i++){
 
-//     if(i==5)
-//       break;
-//    else
-//      console.log(i);
- 
-//  }
-//  console.log("after loop");
-//  for(var j=1;j<=10;j++){
+    if(i==5)
+      break;
+   else
+     console.log('i:', i );
+ }
+    console.log("Break at 5 : Console from end of loop");
 
-//     if(j==5)
-//       continue;
-//    else
-//      console.log(j);
- 
-//  }
+ for(var j=1;j<=10;j++){
+
+    if(j==5)
+      continue;
+   else
+     console.log('j:', j);
+ }
 
 let users = [
     { name: 'Anto', gender: 'm' },
@@ -27,5 +26,12 @@ let users = [
   for (let index = 0; index < users.length; index++) {
     const element = users[index];
     console.log(element)
+  }
+
+  let k=0;
+  while(k<3){
+    console.log('before increment',k);
+    k++ +1;
+    console.log('after increment:', k);
   }
   
