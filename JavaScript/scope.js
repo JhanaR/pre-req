@@ -1,4 +1,4 @@
-let name = "krishna"; //global scope 
+let name = "krishna"; //block scope 
 
 function greet(firstName){
     let lastName = "Kumar";

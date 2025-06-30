@@ -28,9 +28,21 @@ let letting = 15;//redeclare not possible
 letting = 100;//updation possible for var and let alone.
 //
 
+const person = {
+  name: "Alice",
+  age: 30
+};
+
+//updation is possible for const object
+console.log('person before update', person);
+person.age = 31;
+console.log('person after update', person);
+
 const arr = [1,2,3,4];//reassigning array is not possible but we can change value for the index of arr
+console.log('before arr', arr);
 arr[0] = 0;
-console.log('arr', arr);
+console.log('After arr', arr);
+
 
 function letCheck() {
     for(let a=0; a<7; a++){
