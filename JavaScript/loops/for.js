@@ -33,21 +33,17 @@ let obj = {
   
   let arr =["apple", "ball", "cat"];
   
-  //FOR
-  
-  
-  
-  //FOR OFF
-  for(let dop of arr){///its simple
-    //  console.log('prop', prop);//value in properties
-    console.log('prope' + ":", arr[dop]);//value in properties
+  //FOR OFF->object
+  for(let dop=0; dop<arr.length; dop++){///its simple
+    console.log('arrOFdop' + ":", arr[dop]);//values avail in properties
+    console.log('dop' + ":", dop);//index in properties
     }
   
-  //FOR IN
+  //FOR IN-->loop and its used for arrays
   
-  for(let fop in arr){///its simple
-      // console.log('prop', prop);//index in properties
-     console.log('propee' + ":", arr[fop]);//value in properties
+  for(let fop in arr){///its simple    
+     console.log('arrINfop' + ":", arr[fop]);//values avail in properties
+     console.log('fop', fop);//index in properties
     }
   
   

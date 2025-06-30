@@ -355,7 +355,7 @@ console.log('Double the Array', dblNum);
 //Filter out odd numbers
 let whole = [10, 21, 32, 41]
 let odd = whole.filter(num =>num%2 !== 0)
-console.log('Filter out odd numbers', odd);
+console.log('Filter ut odd numbers', odd);
 //Output: [21, 41]
 
 //find first number greater than 50
@@ -369,3 +369,4 @@ let sum = [1, 2, 3, 4]
 let tot = sum.reduce((acc, curr )=>acc +curr, 0)
 console.log('sum of all numbers', tot);
 //Output: 10
+
