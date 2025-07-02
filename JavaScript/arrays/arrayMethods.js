@@ -245,14 +245,14 @@ console.log('splice',numbers);
         console.log('4th array zeroth index',Array[4][0]);
       
 
-//Double the Array
+//MAP Double the Array 
 
 let numm = [1, 2, 3];
 let dblNumm = numm.map(num =>  num * 2)
 console.log('Double the Array', dblNumm);
 //Output: [2, 4, 6]
 
-//Filter out odd numbers
+//FILTER out odd numbers
 let wholee = [10, 21, 32, 41]
 let odde = wholee.filter(num =>num%2 !== 0)
 console.log('Filter out odd numbers', odde);

@@ -10,7 +10,7 @@ const { age, hobby} = baby; //destructuring of object
 console.log('age',age);
 console.log('hobby',hobby);
 const { address="chennai"} = baby;
-const addresss = baby.address === undefined ? defaultValue :baby.address //ternary operator
+const addresss = baby.address === undefined ? 'defaultValue' :baby.address //ternary operator
 console.log('address',address);
 
 const {name, ...other} = baby
@@ -59,3 +59,10 @@ console.log('state', state);
 console.log('post', post);     
 console.log('latitude', latitude);
 console.log('longitude', longitude);
+
+let personalData = {};
+console.log('address from personalData', personalData.address); //undefined
+// console.log('city from personalData', personalData.address.city); //undefined.undefined will give an error
+
+console.log('Is Exist', personalData?.address?.city); //Optional chaining to safely check if 'address' and 'city' exist
+
