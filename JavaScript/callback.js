@@ -1,41 +1,35 @@
-//Certainly! A callback function in JavaScript is a function that is passed into another function as an argument to be executed later.
-// INTRO
-// setTimeout(()=>{
-// console.log('After 3 sec only');
+setTimeout(()=>{
+console.log('After 3 sec only');
 
-// },3000)
+},3000)
+//Some try
+function myFirst(name) {
+    const myName = name.toUpperCase()
+    console.log('First function is called')
+console.log('First function is called' + myName)
+setTimeout(()=>{
+    console.log('set-timeout', myName)
+},5000)
+}
+myFirst('heva');
 
-
-// Some try
-// function myFirst(name) {
-//     const myName = name.toUpperCase()
-// console.log('First function is called' + myName)
-// setTimeout(()=>{
-//     console.log('set-timeout', myName)
-// },5000)
-// }
-
-// myFirst('heva');
-
-
-
-// another try
-// function handleAnother(myName) {
-//     console.log('handleAnother', myName)
-// }
+//another try
+function handleAnother(myName) {
+    console.log('handleAnother', myName)
+}
 
 
-// function myFirst(name) {
-//     const myName = name.toUpperCase()
-// console.log('First function is called' + myName)
+function myFirst(name) {
+    const myName = name.toUpperCase()
+console.log('First function is called ' + myName)
 
-// setTimeout(handleAnother,3000,myName)
-// }
+setTimeout(handleAnother,3000,myName)
+}
 
-// myFirst('heva');
+myFirst('heva');
 
 
-// Another try with time delay
+//Another try with time delay
 // function handleAnother(myName) {
 //     console.log('handleAnother', myName);
 
@@ -53,7 +47,7 @@
 
 // myFirst('heva', handleAnother);
 
-// ASSIGNMENT
+//ASSIGNMENT
 
 // function handleAnother(myName) {
 //     console.log('handleAnother', myName);
@@ -80,45 +74,45 @@
 // myAssignment('heva');
 
 
-function myAssignment(callback) {
+// function myAssignment(callback) {
 
-setTimeout(()=>{
-    console.log('I am a doctor')
-    callback()
-},2000)
+// setTimeout(()=>{
+//     console.log('I am a doctor')
+//     callback()
+// },2000)
 
-}
+// }
 
-function myAssignment1() {
-setTimeout(()=>{
-    console.log( 'You will be alright')
-},2000)
-}
+// function myAssignment1() {
+// setTimeout(()=>{
+//     console.log( 'You will be alright')
+// },2000)
+// }
 
-myAssignment(()=>myAssignment1());
+// myAssignment(()=>myAssignment1());
 
-            // Another
+// Another
 
 // function first(callback) {
-//     setTimeout(() => {
-//         console.log('running: first')
-    
-//         callback()
-//     }, 3000)
-//     }
-    
-//     function second(callback) {
-//     setTimeout(() => {
-//         console.log('running: second')
-    
-//         callback()
-//     }, 3000)
-//     }
-    
-//     function third() {
-//     setTimeout(() => {
-//         console.log('running: third')
-//     }, 3000)
-//     }
-    
-//     first(() => second(() => third()))
+// setTimeout(() => {
+//     console.log('running: first')
+
+//     callback()
+// }, 3000)
+// }
+
+// function second(callback) {
+// setTimeout(() => {
+//     console.log('running: second')
+
+//     callback()
+// }, 3000)
+// }
+
+// function third() {
+// setTimeout(() => {
+//     console.log('running: third')
+// }, 3000)
+// }
+
+// first(() => second(() => third()))

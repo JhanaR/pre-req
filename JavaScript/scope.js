@@ -2,7 +2,7 @@ let name = "krishna"; //block scope
 
 function greet(firstName){
     let lastName = "Kumar";
-    // console.log(firstName);           
+    // console.log('Hello',firstName);           
     return `Hello ${firstName}`;  //local/functional scope
 }
 
