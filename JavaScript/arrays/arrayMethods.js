@@ -370,3 +370,21 @@ let tot = sum.reduce((acc, curr )=>acc +curr, 0)
 console.log('sum of all numbers', tot);
 //Output: 10
 
+let nums = [3, 7, 1, 9, 4];
+
+let max = nums.reduce((acc, curr) => (acc > curr ? acc : curr));
+console.log("Max using reduce:", max);  // Output: 9
+let mathMax = Math.max(...nums);
+console.log("Max using mathMax:", mathMax);  // Output: 9
+let mathMax1 = nums.reduce((acc, curr) => Math.max(acc, curr));
+console.log("Max using reduce & Math.max:", mathMax1);  // Output: 9
+
+let min = nums.reduce((acc, curr) => (acc < curr ? acc : curr)); 
+console.log("Min:", min);  // Output: 1
+let mathMin = Math.min(...nums);
+console.log("Min using mathMin:", mathMin);  // Output: 1 
+let mathMin1 = nums.reduce((acc, curr) => Math.min(acc, curr));
+console.log("Min using reduce & Math.min:", mathMin1);  // Output: 1
+
+
+
