@@ -366,7 +366,7 @@ console.log('find first number greater than 50', firstGreater);
 
 //sum of all numbers
 let sum = [1, 2, 3, 4]
-let tot = sum.reduce((acc, curr )=>acc +curr, 0)
+let tot = sum.reduce((acc, curr )=>acc + curr, 0)
 console.log('sum of all numbers', tot);
 //Output: 10
 
