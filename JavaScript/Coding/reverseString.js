@@ -12,6 +12,22 @@ return joinWord
 }
 console.log(reverseStr(word));
 
+
+function reverseString(str) {
+  let reversed = "";
+
+ 
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversed += str[i];
+  }
+
+  return reversed;
+}
+
+// Test it
+console.log(reverseString("world")); // expected: "dlrow"
+
+
 //Reverse Each Word in a Sentence
 let sentence = "Hello World";
 
