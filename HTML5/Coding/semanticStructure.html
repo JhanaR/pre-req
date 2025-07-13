@@ -1,0 +1,76 @@
+<!---
+------------------------------------------------
+|              HEADER (Logo + Nav)            |
+------------------------------------------------
+| ASIDE (Left) |      MAIN SECTION           |
+|              |  - Article 1                |
+|              |  - Article 2                |
+------------------------------------------------
+|                  FOOTER                    |
+------------------------------------------------
+--->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #e60c0c;
+      }
+
+      .content {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      aside {
+        flex: 1;
+        background-color: #309ae6;
+        padding: 20px;
+      }
+
+      main {
+        flex: 3;
+        background-color: #26cbe1;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <img src="myLogo.jpg" width="200" height="200" />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Rome</a></li>
+          <li><a href="#">Calm</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="content">
+      <aside>ASIDE (Left)</aside>
+      <main>
+        <section>
+          <article>Article 1</article>
+          <article>Article 2</article>
+        </section>
+      </main>
+    </div>
+
+    <footer>FOOTER</footer>
+  </body>
+</html>
