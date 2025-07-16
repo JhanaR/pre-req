@@ -89,3 +89,16 @@ function getUsersByRole() {
 }
 
 console.log(getUsersByRole(usList)); //[ { name: 'Ravi', role: 'Dev' }, { name: 'Kiran', role: 'Dev' } ]
+
+////////////////////////////////////////////////////////////////////////
+const obj1 = { name: "Jhana" };
+const obj2 = { name: "Jhana" };
+
+console.log(obj1 === obj2);//false
+////////////////////////////////////////////////////////////////////////
+const obj3 = { name: "Jhana" };
+const obj4 = obj3;
+
+obj4.name = "React Dev";
+console.log(obj3.name);//React Dev
+console.log(obj4.name);//React Dev
