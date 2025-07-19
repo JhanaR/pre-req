@@ -102,3 +102,19 @@ const obj4 = obj3;
 obj4.name = "React Dev";
 console.log(obj3.name);//React Dev
 console.log(obj4.name);//React Dev
+////////////////////////////////////////////////////////////////////////
+const obj5 = { name: "Jhana" };
+const obj6 = { ...obj5 };
+
+obj6.name = "React Dev";
+
+console.log(obj5.name); // ?Jhana
+console.log(obj6.name); // ?React Dev
+
+const obj7 = { user: { name: "Jhana" } };
+const obj8 = { ...obj7 };
+
+obj8.user.name = "React Dev";
+
+console.log(obj7.user.name); // React Dev (because nested object is still shared)
+////////////////////////////////////////////////////////////////////////

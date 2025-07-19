@@ -16,18 +16,20 @@ let double = function (n) {
 
 let doubleNumber1 = (n) => { return n*2 } //inorder to more simplyfy.
 console.log('doubleNumber1',doubleNumber1(2))
-let doubleNumber2 = (n) => n*2
+let doubleNumber2 = n => n*2
 console.log('doubleNumber2',doubleNumber2(2))
 
 
-const user = {
+const obj = {
   name: "Jhana",
-
-  arrowFunction: () => {
-    console.log("Arrow:", this.name);
+  regularFunc: function () {
+    console.log("regularFunc:", this.name);
+  },
+  arrowFunc: () => {
+    console.log("arrowFunc:", this.name);
   },
 };
 
-user.regularFunction(); // ?
-user.arrowFunction();   // ?
+obj.regularFunc(); // ?Jhana 
+obj.arrowFunc();   // undefined
 
