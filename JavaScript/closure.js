@@ -1,11 +1,15 @@
-function createCounter() {
-  let count = 0; // private variable
-  return function () {
-    return count++; // inner function accessing outer variable
-  };
+function outer() {
+  let count = 0;
+
+  function inner() {
+    count++;
+    return count;
+  }
+
+  return inner;
 }
 
-const counter = createCounter();
-console.log(counter()); // 0
-console.log(counter()); // 1
-console.log(counter()); // 2
+let out = outer();
+console.log('count', out()); // 1
+console.log('count', out()); // 2
+console.log('count', out()); // 3

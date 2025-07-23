@@ -9,77 +9,35 @@ let item = {
       height:.12
     }
   }
-item.check ="verified"
-delete item.price;
-item.check ="UnVerified"
-//access the object properties using .(dot) notation
-console.log(item);
+// item.check ="verified" //adding property to object
+// delete item.price; // deleting the existing property from object
+// console.log('first',item);
+// item.check ="UnVerified" //updating the property value in object
+// console.log('after updating',item);
+// console.log(item.price);// trying to log not existing property
 // console.log(item.quantity);
 // console.log(item.dimensions.breadth);
-// console.log(item.check);
 
-// let user = {
-//    "name" : "rakesh",
-//    age : 32
-// };
+//shallow copy
+  //1.object.assign
+  //2.spread operator
+  //3. array.slice() or array.from
 
-// //access the object properties
-// // . (dot) notation
-// console.log(user);
-// console.log(user.name);
-// console.log(user.age);
-// //add property 
-// user.isAdmin = false;
+  // const assign = Object.assign({}, item);
+  // console.log('assign',assign);
+  // assign.dimensions.breadth = 72;
+  // assign.quantity = 72
 
-// user.age = 31;
 
-// console.log(user);
+  console.log('item',item);
+  // console.log('assign',assign);
 
-// delete user.age;
+   const spread = { ...item }
+     spread.quantity = 88
+     spread.dimensions.breadth = 22
+  console.log('spread quantity',spread.quantity);
+   console.log('item quantity',item.quantity);
 
-// console.log(user);
+     console.log('spread dimensions.breadth',spread.dimensions.breadth);
+   console.log('item dimensions.breadth',item.dimensions.breadth);
 
-// let a = 10;
-// delete a;
-// console.log(a);
-
-// user = {
-//     "likes code": true
-// }
-
-// //console.log(user.likes code);
-
-// // square notation 
-
-// console.log(user["likes code"]);
-const value=10;
-let user = {
-    const : 10,
-    return : 20
-}
-console.log(user);
-
-let users = [];
-
-let userOne = {
-    name:"rakesh",
-    id:123,
-    age:31
-}
-
-users.push(userOne);
-users.push(userOne);
-users.push(userOne);
-users.push(userOne);
-users.push(userOne);
-
-console.log(users);
-
-let userDetails = {
-    name:"krishna",
-    age:31,
-    id:123,
-    hobbies:["singing","shopping","dancing"]
-}
-
-console.log(userDetails.hobbies[1]);

@@ -1,3 +1,25 @@
+//seen in obj
+const users = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+  { id: 1, name: "Alice" },
+  { id: 3, name: "Charlie" },
+  { id: 2, name: "Bob" }
+];
+
+const seen = new Set();
+
+let dupr= users.filter(user =>{
+  if(seen.has(user.id)){
+    return false;
+  } else {
+    seen.add(user.id);
+    return true;
+  }
+})
+
+console.log('dupr',dupr)
+
 //using set operator
 let arr = [1,2,3,4,1,2,3,4];
 
@@ -54,14 +76,16 @@ console.log('MAP FUNCTION',mapDuplicates);
 
 //seen
 
-const removeDuplicates = [];
-const seen = {};
+let check = {};
+let result = [];
 
-arr.forEach((value) => {
-  if (!seen[value]) {
-    removeDuplicates.push(value);
-    seen[value] = true;
+for (let i = 0; i < arr.length; i++) {
+  let current = arr[i];
+  if (!check[current]) {
+    check[current] = true;
+    result.push(current);
   }
-});
+}
 
-console.log('SEEN',removeDuplicates);
+console.log('last',result)
+ // Output: [1, 2, 3, 4]
