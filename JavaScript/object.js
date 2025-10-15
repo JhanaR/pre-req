@@ -41,3 +41,13 @@ let item = {
      console.log('spread dimensions.breadth',spread.dimensions.breadth);
    console.log('item dimensions.breadth',item.dimensions.breadth);
 
+let user = { name: 'Alice', age: 28 };
+delete user.age;   // true
+console.log(user); // { name: 'Alice' }
+
+let a = 10;
+console.log(delete a); // false
+console.log(a);        // 10
+
+
+

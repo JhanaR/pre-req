@@ -1,31 +1,21 @@
-//functions are the building blocks, Allow not to repeat the code 
-          
-
-// Diff btw Function Declaration and Function Expression 
-			  
-// => with  function declaration calling is possible without declaration
-// => with function expression calling is not possible without declaring it 
-			  
-
 //function declaration
-/*function sum(){
+function sum(){
   let a = 5;
   let b = 10;
   let add = a+b;
   console.log(add);
 }
 
-sum();*/
-
+sum();
 
 //function expression
-// let add = function sum(a,b){
-// console.log("Value of a assigned as:", a);
-// console.log("Value of b assigned as:", b);
-// console.log("Additional of two values:", add);
-// }
+let add = function sum(a,b){
+console.log("Value of a assigned as:", a);
+console.log("Value of b assigned as:", b);
+console.log("Additional of two values:", add);
+}
 
-// sum(5,10);
+sum(5,10);
 
 /*
 FUNCTION EXPRESSION
