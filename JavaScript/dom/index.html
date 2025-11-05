@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id ="parah1">Parah1</p>
+<p>Parah2</p>
+<p>Parah3</p>
+<!--Inline Script-->
+ <button onclick ="console.log('HI')">logCheck</button>
+  <!-- <button onclick="document.getElementById('parah1').innerHTML = 'Now Updated'">Button</button> -->
+   <button onclick="changeText()">Change Parah Text</button>
+<!--internal script-
+
+<script>
+    //fetching of data using id method
+        document.getElementById("parah1").innerHTML;
+         console.log('document.getElementById("parah1").innerHTML : ',document.getElementById("parah1").innerHTML)
+    //fetching of data altering the data with help of assignment operator
+        document.getElementById('parah1').innerHTML = 'Now Updated'
+</script>
+
+-->
+
+<!--External script-->
+<script src="main.js"> </script>
+
+</body>
+</html>
