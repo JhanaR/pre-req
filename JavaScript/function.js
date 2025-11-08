@@ -1,30 +1,37 @@
 //function declaration
-function sum(){
+function sumDeclaration(){
   let a = 5;
   let b = 10;
   let add = a+b;
-  console.log(add);
+  console.log('sumDeclaration',add);
 }
 
-sum();
+sumDeclaration();
 
-//function expression
-let add = function sum(a,b){
-console.log("Value of a assigned as:", a);
-console.log("Value of b assigned as:", b);
-console.log("Additional of two values:", add);
+//function Expression
+let sumExpression = () =>{
+   let a = 5;
+   let b = 10;
+   let add = a+ b;
+   console.log('sumExpression',a+b);
 }
 
-sum(5,10);
+sumExpression();
 
-/*
-FUNCTION EXPRESSION
+//function Expression without default value - reusable code
+let sumExpression1 = (a,b) =>{
+   let add = a+b;
+   return add;
+}
 
-let sum = function(a, b) {
-  return a + b;
-};
+console.log('sumExpression1', sumExpression1(5, 10));
 
-sum();// function call;
+//income tax calculation
+
+function incomTax(salary, slab){
+   return final;
+}
+
 
 //FUNCTION DECLARATION
 sum(5,5);// follows hoisting so it will show the result
@@ -35,7 +42,7 @@ function sum (a, b) {
 };
 
 sum(5,5);// function call follows hoisting method;
-console.log('sum',sum(5,5))*/
+console.log('sum',sum(5,5))
 
 let array =[1,2,3,4,5];
 
@@ -47,9 +54,9 @@ let array =[1,2,3,4,5];
 // return addition
 // }
 
-//console.log(doubleArray(array))
+// console.log(doubleArray(array))
 
-//===OR===
+// ===OR===
 
 //converting above function into arrow function----simply function.
 
