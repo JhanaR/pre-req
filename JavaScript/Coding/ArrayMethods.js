@@ -22,9 +22,8 @@ const data = [
 function groupByCategory(arr) {
   let result = {}; // empty object
 
-  arr.forEach(function(item) {
-    let category = item.category;
-    let name = item.name;
+  arr.forEach(function(item) {;
+    let {category,name } = item;
 
     // If category not created yet, create an empty array
     if (!result[category]) {
