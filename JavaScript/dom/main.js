@@ -1,4 +1,6 @@
 function changeText() {
+    // debugger
+
   document.getElementById("parah1").innerHTML = "Now Updated";
 }
 
@@ -7,6 +9,7 @@ function changeText() {
     changeText();
 } */
 
-    document.getElementById('change').addEventListener('click', function(){
-        changeText();
-    })
+document.getElementById('change').addEventListener('click', function(){
+    changeText();
+})
+document.getElementById("parah2").innerHTML = "fetched";
