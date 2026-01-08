@@ -23,7 +23,8 @@ console.log('dupr',dupr)
 //using set operator
 let arr = [1,2,3,4,1,2,3,4];
 
-const dupremo =new Set(arr);
+// const dupremo =new Set(arr);
+const dupremo =[...new Set(arr)];
 console.log('SET OPERATOR1',dupremo);
 
 //using function
