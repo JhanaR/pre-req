@@ -12,6 +12,7 @@ filterFun(); // [2, 4, 6]
 
 /////////////////////////////////////////////////////////////////////////////
  
+
 const data = [
   { category: 'fruit', name: 'apple' },
   { category: 'vegetable', name: 'carrot' },
@@ -19,28 +20,12 @@ const data = [
   { category: 'vegetable', name: 'spinach' }
 ];
 
-function groupByCategory(arr) {
-  let result = {}; // empty object
-
-  arr.forEach(function(item) {;
-    let {category,name } = item;
-
-    // If category not created yet, create an empty array
-    if (!result[category]) {
-      result[category] = [];
+const red =  data.reduce((acc,cur)=>{
+    let cat = cur.category;
+    if(!acc[cat]){
+      acc[cat] = []
     }
-
-    // Push only name
-    result[category].push({ name: name });
-  });
-
-  return result;
-}
-
-console.log(groupByCategory(data));
-
-// Output:
-// {
-//   fruit: [{ name: 'apple' }, { name: 'banana' }],
-//   vegetable: [{ name: 'carrot' }, { name: 'spinach' }]
-// }
+    acc[cat].push(cur)
+ return acc;
+},{})
+console.log('red',red)

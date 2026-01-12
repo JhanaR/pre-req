@@ -279,7 +279,23 @@ let count = fruity.reduce((acc, cur) => {
 }, {});
 
 console.log('count', count); // { apple: 3, banana: 2, orange: 1 }
+const arr = [1,2,3,4,5,6,7,8];
+const size = 3;
+    //output [[1,2,3], [4,5,6], [7,8]]
 
+const result = arr.reduce((acc,curr)=>{
+    const resize = acc[acc.length - 1];
+
+    if(!resize || resize.length === size){
+        acc.push([curr])
+    } else {
+        resize.push(curr);
+    }
+    return acc;
+
+},[])
+
+console.log(result)
 
 //Flattened Array
 
