@@ -1,11 +1,6 @@
 let array = [10, 20, 30];
 console.log(array);//[ 10, 20, 30 ]
 
-//employee
-
-let employee1 = ['Ajay', 35, 7500.99, true];
-console.log(employee1);//[ 'Ajay', 35, 7500.99, true ]
-
 //length
 let personAges = [25, 22, 45, 50];
 for (let i = 0; i < personAges.length; i++) {

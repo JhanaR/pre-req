@@ -28,10 +28,18 @@ const dupremo =[...new Set(arr)];
 console.log('SET OPERATOR1',dupremo);
 
 //using function
-function duprem(arr) {
-    return [...new Set(arr)];
+function removeDuplicates(arr) {
+ return [...new Set(arr)]
 }
-console.log('SET OPERATOR FUNCTION',duprem(arr));
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4]))
+
+function removeDuplicates(arr) {
+ return arr.filter((a,b)=>{
+    return arr.indexOf(a) === b
+ })
+}
+
+console.log(removeDuplicates([1,1,2,3,3,2,5]))
 
 
 //for each

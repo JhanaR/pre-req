@@ -29,3 +29,20 @@ const red =  data.reduce((acc,cur)=>{
  return acc;
 },{})
 console.log('red',red)
+/////////////////////////////////////////////////////////////////////////////
+
+let Input1= [[1, [2, [3, 4]], 5], 6]
+let res = Input1.flat(3);
+
+console.log(res)
+
+
+let Input2= [["a"], ["b", ["c", "d"]], "e"]
+
+const resu = (arr) => {
+  return arr.flat(Infinity);
+};
+
+console.log(resu)
+
+/////////////////////////////////////////////////////////////////////////////
