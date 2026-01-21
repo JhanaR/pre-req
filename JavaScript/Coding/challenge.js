@@ -14,8 +14,8 @@ const nums = [1,2,3,4,5];
 const k = 2;
 
 //using slice
-const first= nums.slice(-2);
-const second = nums.slice(0,3);
+const first= nums.slice(-k);
+const second = nums.slice(0,k+1);
 const final = first.concat(second)
 console.log(final)
 

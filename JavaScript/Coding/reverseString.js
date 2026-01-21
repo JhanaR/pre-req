@@ -33,9 +33,10 @@ let sentence = "Hello World";
 
 function reverseEachWord(senten) {
     let splitSentence = senten.split(' ');
-    let reversedWord = splitSentence.map(function(word){
-        return word.split('').reverse().join('')
-    })
-    return reversedWord.join('');
+    let reversedWord = splitSentence.map((word) => {
+        return word.split('').reverse().join(''); 
+    });
+    return reversedWord.join(' '); 
 }
-console.log(reverseEachWord(sentence));
+
+console.log(reverseEachWord(sentence)); // Output: "olleH dlroW"
