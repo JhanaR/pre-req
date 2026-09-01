@@ -1,0 +1,50 @@
+Basics & ES6+ (Spread, Rest, Destructuring)
+
+Array Power (Map, Filter, Reduce)
+
+Deep Logic (Closures, Prototype, This)
+
+Async World (Event Loop, Promises, Async/Await)
+
+Advanced (Call/Apply/Bind, Hoisting, Custom Errors, Debouncing)
+
+DETAILED:
+
+Array Methods: map, filter, reduce (Senior Level logic)-
+Scope: Lexical scoping, Closures, and Global vs Local-
+This Keyword: Regular vs Arrow functions-
+Async JS: Promises, Async/Await, and Event Loop-
+Inheritance: Prototype Chain-
+Function Tools: Call, Apply, Bind and Hoisting-
+Error Handling:
+	Try-Catch-Finally: Errors-ah eppadi handle panradhu and network call fail aana eppadi app crash aagama paathukkuradhu.
+	Custom Errors: Namakku yethaa maadhiri error messages create panradhu.
+	async function errorHandling(){
+	try{
+		let res = await("url");
+		let data = await res.json();
+		console.log('data',data);
+	}
+	catch(err) {
+		console.log('errMessage',err.message);
+	}
+	finally{
+		console.log('result',result);
+	}
+}
+Custom Errors:
+Memory Management & Performance:
+	Garbage Collection: JavaScript eppadi unused memory-ah clean pannudhu?
+	Memory Leaks: Closure or Event Listeners-ah thappa use panna eppadi memory load aagum-nu therinjikkanum.
+	Debouncing & Throttling: Search bar type pannumbodhu ovvoru letter-kum API call pogaama, konja neram wait panni anupura performance trick.
+
+Concept,"The ""In a Nutshell"" Logic"
+Closures,"Functions that ""remember"" their outer variables even after the parent function is gone."
+Event Loop,The mechanism that handles Async tasks (Macrotasks/Microtasks) without blocking the Main Thread.
+Prototype Chain,"The ""Family Tree"" where objects inherit properties from their parents."
+This Keyword,A dynamic reference that depends on how a function is called (Regular vs. Arrow).
+Map/Filter/Reduce,"The ""Big Three"" for data manipulation. Reduce is the most powerful for complex grouping."
+Call/Apply/Bind,"Tools to ""forcefully"" set the this context and borrow methods."
+Hoisting,"JS moving declarations to the top. var is undefined, let/const are in the Dead Zone."
+Debounce/Throttle,"Performance tricks to limit how often a function runs (e.g., during scrolling or typing)."
+Custom Errors,Creating your own error types to make debugging and error handling more professional.

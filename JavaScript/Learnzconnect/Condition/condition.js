@@ -46,7 +46,7 @@ if(first && last){
     document.getElementById('result').innerHTML = `Added ${first} and ${last}`
 } else {
     console.log("i am in else")
-    document.getElementById('result').innerHTML = `Not provided value for both first and last`
+    document.getElementById('result').innerHTML = `Not provided value for both the fields`
 }
 }
 

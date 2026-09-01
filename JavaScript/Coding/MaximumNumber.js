@@ -20,3 +20,9 @@ function largestNumber(arr) {
   return max; 
 }
 console.log('fxn',largestNumber(array)); 
+
+//////////////////////////////////////////////////////////////////////////////
+  function findLargestNumber(arr) {
+    return [...new Set(arr)].sort((a, b) => b - a)[0];
+  }
+  console.log('set sort',findLargestNumber(array));

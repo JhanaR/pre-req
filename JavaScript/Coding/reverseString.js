@@ -1,17 +1,35 @@
 //Reverse the letters in a string
 
-let word = "Hello World";
+let stringOut = "interview"
 
-function reverseStr(word){
-let splitWord = word.split(''); 
-let reversedWord = splitWord.reverse(); 
-let joinWord = reversedWord.join('');
+let result = stringOut.split('').reverse().join('')
 
-return joinWord
+console.log(result)
+/////////////////////////////////////////////////////
 
+function reverseString(str) {
+  let result = "";
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    result += str[i];
+  }
+
+  return result;
 }
-console.log(reverseStr(word));
 
+console.log(reverseString("interview"));
+
+////////////////////////////////////////////////////
+
+let word = "interview";
+let resulty = [];
+for (let i = word.length - 1; i >= 0; i--) {
+  result.push(word[i]);
+}
+
+console.log(result.join(""));
+
+///////////////////////////////////////////////
 
 function reverseString(str) {
   let reversed = "";
@@ -26,17 +44,3 @@ function reverseString(str) {
 
 // Test it
 console.log(reverseString("world")); // expected: "dlrow"
-
-
-//Reverse Each Word in a Sentence
-let sentence = "Hello World";
-
-function reverseEachWord(senten) {
-    let splitSentence = senten.split(' ');
-    let reversedWord = splitSentence.map((word) => {
-        return word.split('').reverse().join(''); 
-    });
-    return reversedWord.join(' '); 
-}
-
-console.log(reverseEachWord(sentence)); // Output: "olleH dlroW"

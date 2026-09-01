@@ -45,4 +45,31 @@ const resu = (arr) => {
 
 console.log(resu)
 
-/////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////
+
+const employees = [
+  { id: 1, name: "Asha", dept: "IT", salary: 30000 },
+  { id: 2, name: "Kumar", dept: "HR", salary: 25000 },
+  { id: 3, name: "Ravi", dept: "IT", salary: 40000 },
+  { id: 4, name: "Divya", dept: "Finance", salary: 35000 },
+];
+
+// 1.group by (count: totsal)
+// output:
+
+// {
+//   IT: { count: 2, totalSalary: 70000 },
+//   HR: { count: 1, totalSalary: 25000 },
+//   Finance: { count: 1, totalSalary: 35000 }
+// }
+const redu = employees.reduce((acc,cuu)=>{
+   let dept = cuu.dept;
+   if(!acc[dept]){
+       acc[dept] = {count:0, totalSalary:0};
+   }
+   acc[dept].count +=  1;
+   acc[dept].totalSalary += cuu.salary;
+   
+   return acc;
+},{})
+console.log(redu);

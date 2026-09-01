@@ -5,7 +5,7 @@ const transpor =['car','bus','van','jeep','bike','scooter']
 const splice =transpor.splice(2,3);//.splice(start, deleteCount)
 
 console.log('splice',splice);
-//output ['van','jeep']
+//output [ 'van', 'jeep', 'bike' ]
 
 //using SLICE
 const vehicles =['car','bus','van','jeep','bike','scooter']
@@ -352,7 +352,7 @@ console.log(sortUsers);
 
 //Check if at least one user is younger than 25
 let out = users
-		.some( use => use.ag>30)
+		.some( use => use.age>30)
 console.log(out); // Output: true
 
 const orders = [
@@ -402,5 +402,68 @@ console.log("Min using mathMin:", mathMin);  // Output: 1
 let mathMin1 = nums.reduce((acc, curr) => Math.min(acc, curr));
 console.log("Min using reduce & Math.min:", mathMin1);  // Output: 1
 
+/////////////////////////////////////////////////////////////////////////////
+const cart = [
+  { id: 1, item: "Rice", price: 50, category: "Grains" },
+  { id: 2, item: "Milk", price: 30, category: "Dairy" },
+  { id: 3, item: "Apple", price: 120, category: "Fruits" },
+  { id: 4, item: "Dhal", price: 90, category: "Grains" }
+];
 
+const newCart = cart.map((items)=>{
+  if(items.item ==="Apple"){
+    return {...items, price: 150}
+  } else {
+    return items
+  }
+  
+})
+console.log('newCart',newCart);
+
+///////////////////////////////////////////////////////////////////////////
+const players = [
+  { name: "Dhoni", runs: 45, type: "WK" },
+  { name: "Kohli", runs: 82, type: "Batsman" },
+  { name: "Rohit", runs: 15, type: "Batsman" },
+  { name: "Jadeja", runs: 30, type: "All-rounder" },
+  { name: "Bumrah", runs: 5, type: "Bowler" }
+];
+
+const filePlayers = players.filter((file)=>{
+  if(file.runs>50){
+    return file
+  }
+})
+
+console.log('filePlayers',filePlayers);
+
+const mapPlayers = players.map((mape)=>{
+  return {...mape, runs: mape.runs +10}
+})
+
+console.log('mapPlayers',mapPlayers);
+
+const redPlayers = players.reduce((acc,cur)=>{
+  const run = cur.runs
+  return (acc + run)
+},0)
+console.log('redPlayers',redPlayers);
+
+const somee = players.some (som=>som.type ==="All-rounder")
+console.log('somee',somee);
+
+const finde = players.find (fin=>fin.type === "Bowler");
+console.log('finde',finde);
+
+const sorte = players.sort((a,b)=> a.runs - b.runs)
+
+console.log('sorte',sorte);
+
+
+//////////////////////////////////////////////////Chained
+
+const chainFilter = players.filter(fil => fil.type === "Batsman")
+                           .map(na => na.name.toUpperCase());
+
+console.log('chainFilter',chainFilter);
 
